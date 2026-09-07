@@ -42,6 +42,28 @@ export async function runPauseResumeMenuCheck(page: Page): Promise<void> {
 
 export async function runPauseDialogCheck(page: Page): Promise<void> {
   await resetToMonitorList(page);
+
+  // The Pause menu item only appears for monitors that are currently active.
+  // Resume the first monitor first (Resume -> Confirm) so this assertion is
+  // deterministic regardless of any leftover paused state from a previous run.
+  await withRowActionButton(page, async (actionButton) => {
+    await actionButton.click();
+    const resumeItem = page.getByRole("menuitem", { name: "Resume", exact: true });
+    if (await resumeItem.isVisible({ timeout: 1_000 }).catch(() => false)) {
+      await resumeItem.click();
+      await page.getByRole("button", { name: "Confirm", exact: true }).click();
+      // Note: alert-action.tsx emits "Monitor resumed successfully" with no trailing period.
+      await expect(
+        page.getByText("Monitor resumed successfully", { exact: true }),
+      ).toBeVisible({ timeout: 15_000 });
+    } else {
+      // Already active; just close the menu so the next step can reopen it.
+      await page.keyboard.press("Escape");
+    }
+  });
+
+  await resetToMonitorList(page);
+
   await withRowActionButton(page, async (actionButton) => {
     await actionButton.click();
     const pauseItem = page.getByRole("menuitem", { name: "Pause", exact: true });
@@ -62,6 +84,24 @@ export async function runPauseDialogCheck(page: Page): Promise<void> {
 
 export async function runResumeDialogCheck(page: Page): Promise<void> {
   await resetToMonitorList(page);
+
+  // The Resume menu item only appears for monitors that are currently paused.
+  // Pause the first monitor first so this assertion is deterministic regardless
+  // of how earlier steps (TC-0049 cancels a pause) left the row's state.
+  await withRowActionButton(page, async (actionButton) => {
+    await actionButton.click();
+    const pauseItem = page.getByRole("menuitem", { name: "Pause", exact: true });
+    if (await pauseItem.isVisible({ timeout: 1_000 }).catch(() => false)) {
+      await pauseItem.click();
+      await page.getByRole("button", { name: "Confirm", exact: true }).click();
+    } else {
+      // Already paused; just close the menu so the next step can reopen it.
+      await page.keyboard.press("Escape");
+    }
+  });
+
+  await resetToMonitorList(page);
+
   await withRowActionButton(page, async (actionButton) => {
     await actionButton.click();
     const resumeItem = page.getByRole("menuitem", { name: "Resume", exact: true });
@@ -88,8 +128,9 @@ export async function runPauseResumeConfirmCheck(page: Page): Promise<void> {
     await actionButton.click();
     await page.getByRole("menuitem", { name: /^(Pause|Resume)$/ }).click();
     await page.getByRole("button", { name: "Confirm", exact: true }).click();
+    // Note: alert-action.tsx emits "Monitor paused/resumed successfully" with no trailing period.
     await expect(
-      page.getByText(/^Monitor (paused|resumed) successfully\.$/, { exact: true }),
+      page.getByText(/^Monitor (paused|resumed) successfully$/, { exact: true }),
     ).toBeVisible({ timeout: 15_000 });
   });
 }
@@ -217,7 +258,8 @@ export async function runPausedBadgeCheck(page: Page): Promise<void> {
     if ((await pauseItem.count()) > 0) {
       await pauseItem.click();
       await page.getByRole("button", { name: "Confirm", exact: true }).click();
-      await expect(page.getByText("Monitor paused successfully.", { exact: true })).toBeVisible({
+      // Note: alert-action.tsx emits "Monitor paused successfully" with no trailing period.
+      await expect(page.getByText("Monitor paused successfully", { exact: true })).toBeVisible({
         timeout: 15_000,
       });
     }
@@ -319,6 +361,27 @@ export async function runRowClickNavigationCheck(page: Page): Promise<void> {
 
 export async function runDetailsStatusCardCheck(page: Page): Promise<void> {
   await openMonitorList(page);
+
+  // Earlier steps (runPausedBadgeCheck) leave the first row in the paused state.
+  // The "Currently up/down for X" line is intentionally hidden for paused
+  // monitors (details.tsx drops it together with the up/down colour and word),
+  // so resume the first monitor first to verify the elapsed text path.
+  await resetToMonitorList(page);
+  await withRowActionButton(page, async (actionButton) => {
+    await actionButton.click();
+    const resumeItem = page.getByRole("menuitem", { name: "Resume", exact: true });
+    if (await resumeItem.isVisible({ timeout: 1_000 }).catch(() => false)) {
+      await resumeItem.click();
+      await page.getByRole("button", { name: "Confirm", exact: true }).click();
+      // Note: alert-action.tsx emits "Monitor resumed successfully" with no trailing period.
+      await expect(
+        page.getByText("Monitor resumed successfully", { exact: true }),
+      ).toBeVisible({ timeout: 15_000 });
+    } else {
+      await page.keyboard.press("Escape");
+    }
+  });
+
   await openFirstMonitor(page);
   await expect(page.getByRole("heading", { name: "Current Status", exact: true })).toBeVisible({
     timeout: 15_000,
