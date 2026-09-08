@@ -1,0 +1,67 @@
+- generic [ref=e2]:
+  - generic [ref=e134]:
+    - generic [ref=e135]:
+      - generic [ref=e136]:
+        - link [ref=e137] [cursor=pointer]:
+          - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/console
+          - img "Logo" [ref=e138]
+        - button [ref=e139] [cursor=pointer]
+      - generic [ref=e140]:
+        - paragraph [ref=e141]: Workspace
+        - generic [ref=e142]:
+          - button "Project Test Project 1788695386964" [disabled] [ref=e143]:
+            - generic [ref=e147]:
+              - generic [ref=e148]: Project
+              - generic [ref=e149]: Test Project 1788695386964
+          - button "Environment dev" [disabled] [ref=e150]:
+            - generic [ref=e155]:
+              - generic [ref=e156]: Environment
+              - generic [ref=e157]: dev
+      - navigation [ref=e160]:
+        - link "Overview" [ref=e162] [cursor=pointer]:
+          - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/dashboard
+        - link "Monitor" [ref=e170] [cursor=pointer]:
+          - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/monitor
+    - generic [ref=e175]:
+      - banner [ref=e176]:
+        - generic [ref=e177]:
+          - link [ref=e178] [cursor=pointer]:
+            - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/console
+            - button "Back to console" [ref=e179]
+          - button "Change theme" [ref=e182] [cursor=pointer]:
+            - generic [ref=e185]: Auto
+          - img [aria-hidden] [ref=e191] [cursor=pointer]
+          - button "en" [ref=e195] [cursor=pointer]
+          - button "SELISE Blocks apps" [ref=e200] [cursor=pointer]
+          - button "Open user menu" [ref=e212] [cursor=pointer]:
+            - generic [ref=e213]: MZ
+      - main [ref=e216]:
+        - generic [ref=e217]:
+          - generic [ref=e219]:
+            - heading "Project Details" [level=3] [ref=e220]
+            - paragraph [ref=e221]: Core configuration and metadata for this project
+          - generic [ref=e223]:
+            - generic [ref=e224]:
+              - generic [ref=e225]: Name
+              - generic [ref=e226]: Test Project 1788695386964
+            - generic [ref=e227]:
+              - generic [ref=e228]: X-Blocks-Key
+              - generic [ref=e231]:
+                - generic [ref=e232]:
+                  - generic [ref=e233]: Da7
+                  - generic [ref=e234]: "**************"
+                  - generic [ref=e235]: f29
+                - button "Copy" [ref=e237] [cursor=pointer]
+            - generic [ref=e239]:
+              - generic [ref=e240]: Environment
+              - button "Development" [ref=e242] [cursor=pointer]
+            - generic [ref=e243]:
+              - generic [ref=e244]: Last updated Date
+              - generic [ref=e245]: Sep 06, 2026 at 17:49
+            - generic [ref=e246]:
+              - generic [ref=e247]: Created Date
+              - generic [ref=e248]: Sep 06, 2026 at 17:49
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications (F8)":
+    - list

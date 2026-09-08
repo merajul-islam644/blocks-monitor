@@ -1,0 +1,86 @@
+- generic [ref=f3e2]:
+  - generic [ref=f3e4]:
+    - generic [ref=f3e5]:
+      - generic [ref=f3e6]:
+        - link [ref=f3e7] [cursor=pointer]:
+          - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/console
+          - img "Logo" [ref=f3e8]
+        - button [ref=f3e9] [cursor=pointer]
+      - generic [ref=f3e10]:
+        - paragraph [ref=f3e11]: Workspace
+        - generic [ref=f3e12]:
+          - button "Project Test Project 1788695386964" [disabled] [ref=f3e13]:
+            - generic [ref=f3e17]:
+              - generic [ref=f3e18]: Project
+              - generic [ref=f3e19]: Test Project 1788695386964
+          - button "Environment dev" [disabled] [ref=f3e20]:
+            - generic [ref=f3e25]:
+              - generic [ref=f3e26]: Environment
+              - generic [ref=f3e27]: dev
+      - navigation [ref=f3e30]:
+        - link "Overview" [ref=f3e32] [cursor=pointer]:
+          - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/dashboard
+        - link "Monitor" [ref=f3e39] [cursor=pointer]:
+          - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/monitor
+    - generic [ref=f3e45]:
+      - banner [ref=f3e46]:
+        - generic [ref=f3e47]:
+          - link [ref=f3e48] [cursor=pointer]:
+            - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/console
+            - button "Back to console" [ref=f3e49]
+          - button "Change theme" [ref=f3e382] [cursor=pointer]:
+            - generic [ref=f3e55]: Auto
+          - generic [ref=f3e60]:
+            - img [aria-hidden] [ref=f3e61] [cursor=pointer]
+            - generic [ref=f3e64]: "3"
+          - button "en" [ref=f3e383] [cursor=pointer]
+          - button "SELISE Blocks apps" [ref=f3e384] [cursor=pointer]
+          - button "Open user menu" [ref=f3e385] [cursor=pointer]:
+            - generic [ref=f3e84]: MZ
+      - main [ref=f3e87]:
+        - main [ref=f3e88]:
+          - generic [ref=f3e89]:
+            - heading "Monitor" [level=1] [ref=f3e90]
+            - link [ref=f3e91] [cursor=pointer]:
+              - /url: https://dev-monitor.blocksdevelopers.com/swagger/index.html
+              - button "API Docs" [ref=f3e92]
+          - generic [ref=f3e95]:
+            - tablist [ref=f3e99]:
+              - tab "My monitors" [selected] [ref=f3e100] [cursor=pointer]
+              - tab "Blocks services" [ref=f3e101] [cursor=pointer]
+            - button "Add Monitor" [ref=f3e102] [cursor=pointer]
+          - generic [ref=f3e104]:
+            - table [ref=f3e110]:
+              - rowgroup [ref=f3e111]:
+                - row [ref=f3e112]:
+                  - columnheader "Name" [ref=f3e113]
+                  - columnheader "Monitor Type" [ref=f3e118]
+                  - columnheader "URL" [ref=f3e121]
+                  - columnheader "Tagged Service" [ref=f3e124]
+                  - columnheader "Uptime" [ref=f3e127]
+                  - columnheader "Status" [ref=f3e130]
+                  - columnheader [ref=f3e133]
+              - rowgroup [ref=f3e134]:
+                - row [ref=f3e400] [cursor=pointer]:
+                  - cell "Verify HTTP Check 1788743890176" [ref=f3e136]
+                  - cell "HTTP Check" [ref=f3e139]
+                  - cell "https://example.com/verify-1788743903329" [ref=f3e142]
+                  - cell "-" [ref=f3e145]
+                  - cell "Sep 7, 2026" [ref=f3e148]
+                  - cell "96%" [ref=f3e413]
+                  - cell [ref=f3e206]
+            - generic [ref=f3e214]:
+              - generic [ref=f3e215]:
+                - paragraph [ref=f3e216]: Rows per page
+                - combobox [ref=f3e217] [cursor=pointer]:
+                  - generic: "10"
+              - generic [ref=f3e220]: Page 1 of 1
+              - generic [ref=f3e221]:
+                - button "Go to first page" [disabled]
+                - button "Go to previous page" [disabled]
+                - button "Go to next page" [disabled]
+                - button "Go to last page" [disabled]
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications (F8)":
+    - list

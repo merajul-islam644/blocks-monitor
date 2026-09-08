@@ -1,0 +1,69 @@
+- generic [ref=f7e2]:
+  - generic [ref=f7e3]:
+    - banner [ref=f7e5]:
+      - link [ref=f7e8] [cursor=pointer]:
+        - /url: /app/console
+        - img "Logo" [ref=f7e9]
+      - generic [ref=f7e10]:
+        - button "Change theme" [ref=f7e11] [cursor=pointer]:
+          - generic [ref=f7e14]: Auto
+        - generic [ref=f7e18]:
+          - img [aria-hidden] [ref=f7e19] [cursor=pointer]
+          - generic [ref=f7e22]: "2"
+        - button "en" [ref=f7e23] [cursor=pointer]
+        - button "SELISE Blocks apps" [ref=f7e27] [cursor=pointer]
+        - button "Open user menu" [ref=f7e38] [cursor=pointer]:
+          - generic [ref=f7e39]: MZ
+    - main [ref=f7e40]:
+      - generic [ref=f7e42]:
+        - generic [ref=f7e43]:
+          - generic [ref=f7e45]:
+            - heading "Your Blocks Projects" [level=2] [ref=f7e46]
+            - generic [ref=f7e47]: "2"
+          - generic "Project filters and view" [ref=f7e48]:
+            - generic [ref=f7e49]:
+              - textbox "Search projects..." [ref=f7e54]
+              - button "Environment" [ref=f7e55] [cursor=pointer]
+            - radiogroup "Project view" [ref=f7e59]:
+              - radio "Grid view" [checked] [ref=f7e60] [cursor=pointer]
+              - radio "List view" [ref=f7e61] [cursor=pointer]
+          - generic [ref=f7e62]:
+            - paragraph [ref=f7e68] [cursor=pointer]: Add Project
+            - generic [ref=f7e70]:
+              - generic [ref=f7e71]:
+                - generic [ref=f7e72]: Test Project 1788695386964
+                - button "Configure project" [ref=f7e75] [cursor=pointer]
+              - button "Development" [ref=f7e78] [cursor=pointer]
+            - generic [ref=f7e82]:
+              - generic [ref=f7e83]:
+                - generic [ref=f7e84]: Testing
+                - button "Configure project" [ref=f7e87] [cursor=pointer]
+              - button "Development" [ref=f7e90] [cursor=pointer]
+        - generic [ref=f7e93]:
+          - generic [ref=f7e94]: Resources
+          - generic [ref=f7e97]:
+            - link "Docs Docs Established standards that help project managers and technical leaders minimize project risks. Explore →" [ref=f7e98] [cursor=pointer]:
+              - /url: https://docs.seliseblocks.com
+              - img "Docs" [ref=f7e101]
+              - generic [ref=f7e102]:
+                - heading "Docs" [level=4] [ref=f7e104]
+                - paragraph [ref=f7e108]: Established standards that help project managers and technical leaders minimize project risks.
+                - generic [ref=f7e109]: Explore →
+            - link "Code Code A repository of well-documented, reusable, tried and tested core components for developers. Explore →" [ref=f7e110] [cursor=pointer]:
+              - /url: https://github.com/SELISEdigitalplatforms
+              - img "Code" [ref=f7e113]
+              - generic [ref=f7e114]:
+                - heading "Code" [level=4] [ref=f7e116]
+                - paragraph [ref=f7e120]: A repository of well-documented, reusable, tried and tested core components for developers.
+                - generic [ref=f7e121]: Explore →
+            - link "Cloud Cloud High-performing, optimized, and 24/7 monitored enterprise cloud deployment. Explore →" [ref=f7e122] [cursor=pointer]:
+              - /url: https://selisegroup.com/blocks/
+              - img "Cloud" [ref=f7e125]
+              - generic [ref=f7e126]:
+                - heading "Cloud" [level=4] [ref=f7e128]
+                - paragraph [ref=f7e132]: High-performing, optimized, and 24/7 monitored enterprise cloud deployment.
+                - generic [ref=f7e133]: Explore →
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications (F8)":
+    - list

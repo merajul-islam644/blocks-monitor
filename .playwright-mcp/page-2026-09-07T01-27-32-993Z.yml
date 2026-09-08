@@ -1,0 +1,243 @@
+- generic:
+  - generic [aria-hidden]:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/console
+            - button
+          - generic:
+            - paragraph: Workspace
+            - generic:
+              - button [disabled]:
+                - generic:
+                  - generic:
+                    - generic: Project
+                    - generic: Test Project 1788695386964
+              - button [disabled]:
+                - generic:
+                  - generic:
+                    - generic: Environment
+                    - generic: dev
+          - generic:
+            - navigation:
+              - generic:
+                - link:
+                  - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/dashboard
+                  - generic: Overview
+              - generic:
+                - link:
+                  - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/monitor
+                  - generic: Monitor
+        - generic:
+          - banner:
+            - generic:
+              - link:
+                - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/console
+                - button:
+                  - generic: Back to console
+              - button [ref=e1009] [cursor=pointer]:
+                - generic [ref=e185]: Auto
+              - generic [ref=e190]:
+                - img [aria-hidden] [ref=e191] [cursor=pointer]
+                - generic [ref=e1008]: "3"
+              - button [ref=e1010] [cursor=pointer]:
+                - generic [ref=e196]: en
+              - button [ref=e1011] [cursor=pointer]
+              - button [ref=e1012] [cursor=pointer]:
+                - generic [ref=e213]: MZ
+          - generic:
+            - generic:
+              - main:
+                - generic:
+                  - generic:
+                    - generic:
+                      - button
+                      - heading [level=1]: Verify HTTP Check 1788743890176
+                    - generic:
+                      - button: Notification Settings
+                      - button: Configure
+                      - button
+                  - generic:
+                    - generic:
+                      - generic:
+                        - heading [level=3]: General information
+                      - generic:
+                        - generic:
+                          - generic: Tagged Service
+                          - text: None
+                        - generic:
+                          - generic: URL to monitor
+                          - link:
+                            - /url: https://example.com/verify-1788743903329
+                            - text: https://example.com/verify-1788743903329
+                        - generic:
+                          - generic: Monitor type
+                          - generic: HTTP Check
+                        - generic:
+                          - generic: Notification recipients
+                          - generic:
+                            - generic: Add recipient
+                            - button
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - heading [level=3]: Current Status
+                            - generic:
+                              - generic: down
+                              - generic: Currently down for -14s
+                          - generic:
+                            - heading [level=3]: Last 7 days
+                            - generic:
+                              - generic: 100.00%
+                              - generic: 0 incidents, 0s down
+                          - generic:
+                            - heading [level=3]: Last 30 days
+                            - generic:
+                              - generic: 100.00%
+                              - generic: 0 incidents, 0s down
+                          - generic:
+                            - heading [level=3]: Last 365 days
+                            - generic:
+                              - generic: 100.00%
+                              - generic: 0 incidents, 0s down
+                      - generic:
+                        - generic:
+                          - generic:
+                            - heading [level=3]:
+                              - generic: Status Overview
+                              - generic:
+                                - combobox:
+                                  - generic: Last 1 Hour
+                            - paragraph:
+                              - generic:
+                                - generic: Monitor interval
+                                - generic: 1m
+                              - generic:
+                                - generic: Request timeout
+                                - generic: 30s
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Uptime
+                                - generic: 100.00%
+                              - generic:
+                                - generic: Total Downtime
+                                - generic: 0s
+                              - generic:
+                                - generic: Incidents
+                                - generic: "0"
+                            - generic:
+                              - generic:
+                                - img:
+                                  - generic:
+                                    - generic:
+                                      - generic: 06:21
+                                      - generic: 06:36
+                                      - generic: 06:51
+                                      - generic: 07:06
+                                      - generic: 07:21
+                                  - generic:
+                                    - generic:
+                                      - generic: Down
+                                      - generic: Up
+                        - generic:
+                          - generic: Latest incidents
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - table:
+                                    - rowgroup:
+                                      - row:
+                                        - columnheader:
+                                          - generic: Status
+                                        - columnheader:
+                                          - generic: Status Code
+                                        - columnheader:
+                                          - generic: Root cause
+                                        - columnheader:
+                                          - generic: Start time
+                                        - columnheader:
+                                          - generic: End time
+                                        - columnheader:
+                                          - generic: Duration
+                                    - rowgroup:
+                                      - row:
+                                        - cell: No results.
+    - list
+    - list
+  - generic [aria-hidden]: Down
+  - dialog [ref=e1014]:
+    - generic [ref=e1015]:
+      - heading "Configure" [level=2] [ref=e1016]
+      - button "Close" [ref=e1017] [cursor=pointer]
+    - generic [ref=e1023]:
+      - generic [ref=e1024]:
+        - generic [ref=e1025]:
+          - text: Name
+          - textbox "Name" [disabled] [ref=e1026]:
+            - /placeholder: Enter monitor name
+            - text: Verify HTTP Check 1788743890176
+        - generic [ref=e1027]:
+          - generic [ref=e1028]:
+            - generic [ref=e1029]: Tag a Service
+            - radiogroup [ref=e1030]:
+              - generic [ref=e1031]:
+                - radio "None" [checked] [disabled] [ref=e1032]
+                - radio [checked] [disabled] [aria-hidden]
+                - generic [ref=e1036] [cursor=pointer]: None
+              - generic [ref=e1037]:
+                - radio "Deployed" [disabled] [ref=e1038]
+                - radio [disabled] [aria-hidden]
+                - generic [ref=e1039] [cursor=pointer]: Deployed
+              - generic [ref=e1040]:
+                - radio "My services" [disabled] [ref=e1041]
+                - radio [disabled] [aria-hidden]
+                - generic [ref=e1042] [cursor=pointer]: My services
+          - paragraph [ref=e1043]: Monitor source cannot be changed for existing monitors.
+        - generic [ref=e1044]:
+          - text: URL to monitor
+          - textbox "URL to monitor" [disabled] [ref=e1045]:
+            - /placeholder: Enter URL to monitor
+            - text: https://example.com/verify-1788743903329
+      - generic [ref=e1046]:
+        - heading [level=3] [ref=e1048]:
+          - button "Monitor settings" [ref=e1049] [cursor=pointer]
+        - generic [ref=e1052]:
+          - heading [level=3] [ref=e1053]:
+            - button "Request Configuration" [expanded] [active] [ref=e1054] [cursor=pointer]
+          - region "Request Configuration" [ref=e1060]:
+            - generic [ref=e1061]:
+              - generic [ref=e1062]:
+                - text: HTTP method
+                - radiogroup [ref=e1063]:
+                  - generic [ref=e1064]:
+                    - generic [ref=e1065]:
+                      - radio "Head" [checked] [ref=e1066] [cursor=pointer]
+                      - radio [checked] [aria-hidden]
+                      - generic [ref=e1070] [cursor=pointer]: Head
+                    - generic [ref=e1071]:
+                      - radio "Get" [ref=e1072] [cursor=pointer]
+                      - radio [aria-hidden]
+                      - generic [ref=e1073] [cursor=pointer]: Get
+                    - generic [ref=e1074]:
+                      - radio "Post" [ref=e1075] [cursor=pointer]
+                      - radio [aria-hidden]
+                      - generic [ref=e1076] [cursor=pointer]: Post
+              - generic [ref=e1077]:
+                - text: Request body
+                - textbox "Request body" [disabled] [ref=e1078]:
+                  - /placeholder: Enter request body content...
+                  - text: "{\"key\":\"value\"}"
+              - generic [ref=e1079]:
+                - generic [ref=e1080]:
+                  - text: Send as JSON (application/json)
+                  - button [ref=e1081] [cursor=pointer]
+                - switch "Send as JSON (application/json)" [ref=e1085] [cursor=pointer]
+                - checkbox [aria-hidden]
+      - generic [ref=e1057]:
+        - button "Cancel" [ref=e1058] [cursor=pointer]
+        - button "Save" [ref=e1059] [cursor=pointer]

@@ -1,0 +1,191 @@
+- generic:
+  - generic [aria-hidden]:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/console
+            - button
+          - generic:
+            - paragraph: Workspace
+            - generic:
+              - button [disabled]:
+                - generic:
+                  - generic:
+                    - generic: Project
+                    - generic: Test Project 1788695386964
+              - button [disabled]:
+                - generic:
+                  - generic:
+                    - generic: Environment
+                    - generic: dev
+          - generic:
+            - navigation:
+              - generic:
+                - link:
+                  - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/dashboard
+                  - generic: Overview
+              - generic:
+                - link:
+                  - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/monitor
+                  - generic: Monitor
+        - generic:
+          - banner:
+            - generic:
+              - link:
+                - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/console
+                - button:
+                  - generic: Back to console
+              - button [ref=f3e471] [cursor=pointer]:
+                - generic [ref=f3e55]: Auto
+              - generic [ref=f3e60]:
+                - img [aria-hidden] [ref=f3e61] [cursor=pointer]
+                - generic [ref=f3e64]: "3"
+              - button [ref=f3e472] [cursor=pointer]:
+                - generic [ref=f3e67]: en
+              - button [ref=f3e473] [cursor=pointer]
+              - button [ref=f3e474] [cursor=pointer]:
+                - generic [ref=f3e84]: MZ
+          - generic:
+            - generic:
+              - main:
+                - main:
+                  - generic:
+                    - heading [level=1]: Monitor
+                    - link:
+                      - /url: https://dev-monitor.blocksdevelopers.com/swagger/index.html
+                      - button: API Docs
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - tablist:
+                            - tab [selected]: My monitors
+                            - tab: Blocks services
+                    - button: Add Monitor
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - table:
+                                - rowgroup:
+                                  - row:
+                                    - columnheader:
+                                      - generic: Name
+                                    - columnheader:
+                                      - generic: Monitor Type
+                                    - columnheader:
+                                      - generic: URL
+                                    - columnheader:
+                                      - generic: Tagged Service
+                                    - columnheader:
+                                      - generic: Uptime
+                                    - columnheader:
+                                      - generic: Status
+                                    - columnheader
+                                - rowgroup:
+                                  - row:
+                                    - cell:
+                                      - generic: Verify HTTP Check 1788743890176
+                                    - cell:
+                                      - generic: HTTP Check
+                                    - cell:
+                                      - generic: https://example.com/verify-1788743903329
+                                    - cell:
+                                      - generic: "-"
+                                    - cell:
+                                      - generic: Sep 7, 2026
+                                    - cell:
+                                      - generic: 96%
+                                    - cell
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - paragraph: Rows per page
+                            - combobox:
+                              - generic: "10"
+                          - generic: Page 1 of 1
+                          - generic:
+                            - button [disabled]
+                            - button [disabled]
+                            - button [disabled]
+                            - button [disabled]
+    - list
+    - list
+  - dialog [ref=f3e476]:
+    - generic [ref=f3e477]:
+      - heading "Add monitor" [level=2] [ref=f3e478]
+      - button "Close" [active] [ref=f3e479] [cursor=pointer]
+    - generic [ref=f3e485]:
+      - generic [ref=f3e486]:
+        - generic [ref=f3e487]: Monitor type
+        - radiogroup [ref=f3e488]:
+          - generic [ref=f3e489]:
+            - radio "HTTP Check" [checked] [ref=f3e490] [cursor=pointer]
+            - radio [checked] [aria-hidden]
+            - generic [ref=f3e494] [cursor=pointer]: HTTP Check
+          - generic [ref=f3e495]:
+            - radio "Heartbeat" [ref=f3e496] [cursor=pointer]
+            - radio [aria-hidden]
+            - generic [ref=f3e497] [cursor=pointer]: Heartbeat
+      - generic [ref=f3e498]:
+        - generic [ref=f3e499]:
+          - text: Name
+          - textbox "Name" [ref=f3e500]:
+            - /placeholder: Enter monitor name
+        - generic [ref=f3e502]:
+          - generic [ref=f3e503]: Tag a Service
+          - radiogroup [ref=f3e504]:
+            - generic [ref=f3e505]:
+              - radio "None" [checked] [ref=f3e506] [cursor=pointer]
+              - radio [checked] [aria-hidden]
+              - generic [ref=f3e510] [cursor=pointer]: None
+            - generic [ref=f3e511]:
+              - radio "Deployed" [ref=f3e512] [cursor=pointer]
+              - radio [aria-hidden]
+              - generic [ref=f3e513] [cursor=pointer]: Deployed
+            - generic [ref=f3e514]:
+              - radio "My services" [ref=f3e515] [cursor=pointer]
+              - radio [aria-hidden]
+              - generic [ref=f3e516] [cursor=pointer]: My services
+        - generic [ref=f3e517]:
+          - text: URL to monitor
+          - textbox "URL to monitor" [ref=f3e518]:
+            - /placeholder: Enter URL to monitor
+      - generic [ref=f3e519]:
+        - generic [ref=f3e520]:
+          - heading [level=3] [ref=f3e521]:
+            - button "Monitor settings" [expanded] [ref=f3e522] [cursor=pointer]
+          - region "Monitor settings" [ref=f3e525]:
+            - generic [ref=f3e526]:
+              - generic [ref=f3e527]:
+                - generic [ref=f3e528]:
+                  - text: Monitor interval
+                  - button [ref=f3e529] [cursor=pointer]
+                - slider [ref=f3e537] [cursor=pointer]
+                - generic [ref=f3e538]:
+                  - generic [ref=f3e539]: 30s
+                  - generic [ref=f3e540]: 1min
+                  - generic [ref=f3e541]: 5min
+                  - generic [ref=f3e542]: 30min
+                  - generic [ref=f3e543]: 1h
+              - generic [ref=f3e544]:
+                - generic [ref=f3e545]:
+                  - text: Request timeout
+                  - button [ref=f3e546] [cursor=pointer]
+                - slider [ref=f3e553] [cursor=pointer]
+                - generic [ref=f3e554]:
+                  - generic [ref=f3e555]: 30s
+                  - generic [ref=f3e556]: 1min
+                  - generic [ref=f3e557]: 5min
+                  - generic [ref=f3e558]: 30min
+                  - generic [ref=f3e559]: 1h
+        - heading [level=3] [ref=f3e561]:
+          - button "Request Configuration" [ref=f3e562] [cursor=pointer]
+      - generic [ref=f3e565]:
+        - button "Cancel" [ref=f3e566] [cursor=pointer]
+        - button "Save" [disabled] [ref=f3e567]

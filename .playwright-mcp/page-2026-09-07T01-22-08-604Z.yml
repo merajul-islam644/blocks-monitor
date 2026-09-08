@@ -1,0 +1,176 @@
+- generic:
+  - generic [aria-hidden]:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/console
+            - button
+          - generic:
+            - paragraph: Workspace
+            - generic:
+              - button [disabled]:
+                - generic:
+                  - generic:
+                    - generic: Project
+                    - generic: Test Project 1788695386964
+              - button [disabled]:
+                - generic:
+                  - generic:
+                    - generic: Environment
+                    - generic: dev
+          - generic:
+            - navigation:
+              - generic:
+                - link:
+                  - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/dashboard
+                  - generic: Overview
+              - generic:
+                - link:
+                  - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/monitor
+                  - generic: Monitor
+        - generic:
+          - banner:
+            - generic:
+              - link:
+                - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/console
+                - button:
+                  - generic: Back to console
+              - button [ref=e915] [cursor=pointer]:
+                - generic [ref=e185]: Auto
+              - img [aria-hidden] [ref=e191] [cursor=pointer]
+              - button [ref=e916] [cursor=pointer]:
+                - generic [ref=e196]: en
+              - button [ref=e917] [cursor=pointer]
+              - button [ref=e918] [cursor=pointer]:
+                - generic [ref=e213]: MZ
+          - generic:
+            - generic:
+              - main:
+                - generic:
+                  - generic:
+                    - generic:
+                      - button
+                      - heading [level=1]: Verify HTTP Check 1788743890176
+                    - generic:
+                      - button: Notification Settings
+                      - button: Configure
+                      - button
+                  - generic:
+                    - generic:
+                      - generic:
+                        - heading [level=3]: General information
+                      - generic:
+                        - generic:
+                          - generic: Tagged Service
+                          - text: None
+                        - generic:
+                          - generic: URL to monitor
+                          - link:
+                            - /url: https://example.com/verify-1788743903329
+                            - text: https://example.com/verify-1788743903329
+                        - generic:
+                          - generic: Monitor type
+                          - generic: HTTP Check
+                        - generic:
+                          - generic: Notification recipients
+                          - generic:
+                            - generic: Add recipient
+                            - button
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - heading [level=3]: Current Status
+                            - generic:
+                              - generic: up
+                              - generic: Currently up for 0s
+                          - generic:
+                            - heading [level=3]: Last 7 days
+                            - generic:
+                              - generic: 100.00%
+                              - generic: 0 incidents, 0s down
+                          - generic:
+                            - heading [level=3]: Last 30 days
+                            - generic:
+                              - generic: 100.00%
+                              - generic: 0 incidents, 0s down
+                          - generic:
+                            - heading [level=3]: Last 365 days
+                            - generic:
+                              - generic: 100.00%
+                              - generic: 0 incidents, 0s down
+                      - generic:
+                        - generic:
+                          - generic:
+                            - heading [level=3]:
+                              - generic: Status Overview
+                              - generic:
+                                - combobox [expanded]:
+                                  - generic: Last 1 Hour
+                            - paragraph:
+                              - generic:
+                                - generic: Monitor interval
+                                - generic: 1m
+                              - generic:
+                                - generic: Request timeout
+                                - generic: 30s
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Uptime
+                                - generic: 100.00%
+                              - generic:
+                                - generic: Total Downtime
+                                - generic: 0s
+                              - generic:
+                                - generic: Incidents
+                                - generic: "0"
+                            - generic:
+                              - generic:
+                                - img:
+                                  - generic:
+                                    - generic:
+                                      - generic: 06:21
+                                      - generic: 06:36
+                                      - generic: 06:51
+                                      - generic: 07:06
+                                      - generic: 07:21
+                                  - generic:
+                                    - generic:
+                                      - generic: Down
+                                      - generic: Up
+                        - generic:
+                          - generic: Latest incidents
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - table:
+                                    - rowgroup:
+                                      - row:
+                                        - columnheader:
+                                          - generic: Status
+                                        - columnheader:
+                                          - generic: Status Code
+                                        - columnheader:
+                                          - generic: Root cause
+                                        - columnheader:
+                                          - generic: Start time
+                                        - columnheader:
+                                          - generic: End time
+                                        - columnheader:
+                                          - generic: Duration
+                                    - rowgroup:
+                                      - row:
+                                        - cell: No results.
+    - list
+    - list
+  - generic [aria-hidden]: Down
+  - listbox [ref=e919]:
+    - option "Last 1 Hour" [active] [selected] [ref=e920]
+    - option "Last 3 Hours" [ref=e926]
+    - option "Last 6 Hours" [ref=e929]
+    - option "Last 12 Hours" [ref=e932]
+    - option "Last 24 Hours" [ref=e935]

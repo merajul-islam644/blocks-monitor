@@ -1,0 +1,78 @@
+- generic [ref=e2]:
+  - generic [ref=e134]:
+    - generic [ref=e135]:
+      - generic [ref=e136]:
+        - link [ref=e137] [cursor=pointer]:
+          - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/console
+          - img "Logo" [ref=e138]
+        - button [ref=e139] [cursor=pointer]
+      - generic [ref=e140]:
+        - paragraph [ref=e141]: Workspace
+        - generic [ref=e142]:
+          - button "Project Test Project 1788695386964" [disabled] [ref=e143]:
+            - generic [ref=e147]:
+              - generic [ref=e148]: Project
+              - generic [ref=e149]: Test Project 1788695386964
+          - button "Environment dev" [disabled] [ref=e150]:
+            - generic [ref=e155]:
+              - generic [ref=e156]: Environment
+              - generic [ref=e157]: dev
+      - navigation [ref=e160]:
+        - link "Overview" [ref=e162] [cursor=pointer]:
+          - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/dashboard
+        - link "Monitor" [active] [ref=e170] [cursor=pointer]:
+          - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/monitor
+    - generic [ref=e175]:
+      - banner [ref=e176]:
+        - generic [ref=e177]:
+          - link [ref=e178] [cursor=pointer]:
+            - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/console
+            - button "Back to console" [ref=e179]
+          - button "Change theme" [ref=e182] [cursor=pointer]:
+            - generic [ref=e185]: Auto
+          - img [aria-hidden] [ref=e191] [cursor=pointer]
+          - button "en" [ref=e195] [cursor=pointer]
+          - button "SELISE Blocks apps" [ref=e200] [cursor=pointer]
+          - button "Open user menu" [ref=e212] [cursor=pointer]:
+            - generic [ref=e213]: MZ
+      - main [ref=e473]:
+        - main [ref=e474]:
+          - generic [ref=e475]:
+            - heading "Monitor" [level=1] [ref=e476]
+            - link [ref=e477] [cursor=pointer]:
+              - /url: https://dev-monitor.blocksdevelopers.com/swagger/index.html
+              - button "API Docs" [ref=e478]
+          - generic [ref=e481]:
+            - tablist [ref=e485]:
+              - tab "My monitors" [selected] [ref=e486] [cursor=pointer]
+              - tab "Blocks services" [ref=e487] [cursor=pointer]
+            - button "Add Monitor" [ref=e488] [cursor=pointer]
+          - generic [ref=e490]:
+            - table [ref=e496]:
+              - rowgroup [ref=e497]:
+                - row [ref=e498]:
+                  - columnheader "Name" [ref=e499]
+                  - columnheader "Monitor Type" [ref=e504]
+                  - columnheader "URL" [ref=e507]
+                  - columnheader "Tagged Service" [ref=e510]
+                  - columnheader "Uptime" [ref=e513]
+                  - columnheader "Status" [ref=e516]
+                  - columnheader [ref=e519]
+              - rowgroup [ref=e520]:
+                - row [ref=e521]:
+                  - cell "No results." [ref=e522]
+            - generic [ref=e525]:
+              - generic [ref=e526]:
+                - paragraph [ref=e527]: Rows per page
+                - combobox [ref=e528] [cursor=pointer]:
+                  - generic: "10"
+              - generic [ref=e531]: Page 1 of 1
+              - generic [ref=e532]:
+                - button "Go to first page" [disabled]
+                - button "Go to previous page" [disabled]
+                - button "Go to next page" [disabled]
+                - button "Go to last page" [disabled]
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications (F8)":
+    - list

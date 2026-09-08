@@ -1,0 +1,197 @@
+- generic:
+  - generic [aria-hidden]:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/console
+            - button
+          - generic:
+            - paragraph: Workspace
+            - generic:
+              - button [disabled]:
+                - generic:
+                  - generic:
+                    - generic: Project
+                    - generic: Test Project 1788695386964
+              - button [disabled]:
+                - generic:
+                  - generic:
+                    - generic: Environment
+                    - generic: dev
+          - generic:
+            - navigation:
+              - generic:
+                - link:
+                  - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/dashboard
+                  - generic: Overview
+              - generic:
+                - link:
+                  - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/monitor
+                  - generic: Monitor
+        - generic:
+          - banner:
+            - generic:
+              - link:
+                - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/console
+                - button:
+                  - generic: Back to console
+              - button [ref=e1125] [cursor=pointer]:
+                - generic [ref=e185]: Auto
+              - generic [ref=e190]:
+                - img [aria-hidden] [ref=e191] [cursor=pointer]
+                - generic [ref=e1008]: "3"
+              - button [ref=e1126] [cursor=pointer]:
+                - generic [ref=e196]: en
+              - button [ref=e1127] [cursor=pointer]
+              - button [ref=e1128] [cursor=pointer]:
+                - generic [ref=e213]: MZ
+          - generic:
+            - generic:
+              - main:
+                - generic:
+                  - generic:
+                    - generic:
+                      - button
+                      - heading [level=1]: Verify HTTP Check 1788743890176
+                    - generic:
+                      - button: Notification Settings
+                      - button: Configure
+                      - button
+                  - generic:
+                    - generic:
+                      - generic:
+                        - heading [level=3]: General information
+                      - generic:
+                        - generic:
+                          - generic: Tagged Service
+                          - text: None
+                        - generic:
+                          - generic: URL to monitor
+                          - link:
+                            - /url: https://example.com/verify-1788743903329
+                            - text: https://example.com/verify-1788743903329
+                        - generic:
+                          - generic: Monitor type
+                          - generic: HTTP Check
+                        - generic:
+                          - generic: Notification recipients
+                          - generic:
+                            - generic: Add recipient
+                            - button
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - heading [level=3]: Current Status
+                            - generic:
+                              - generic: down
+                              - generic: Currently down for -14s
+                          - generic:
+                            - heading [level=3]: Last 7 days
+                            - generic:
+                              - generic: 99.97%
+                              - generic: 1 incidents, 2m 48s down
+                          - generic:
+                            - heading [level=3]: Last 30 days
+                            - generic:
+                              - generic: 99.99%
+                              - generic: 1 incidents, 2m 48s down
+                          - generic:
+                            - heading [level=3]: Last 365 days
+                            - generic:
+                              - generic: 100.00%
+                              - generic: 1 incidents, 2m 48s down
+                      - generic:
+                        - generic:
+                          - generic:
+                            - heading [level=3]:
+                              - generic: Status Overview
+                              - generic:
+                                - combobox:
+                                  - generic: Last 1 Hour
+                            - paragraph:
+                              - generic:
+                                - generic: Monitor interval
+                                - generic: 1m
+                              - generic:
+                                - generic: Request timeout
+                                - generic: 30s
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: Uptime
+                                - generic: 100.00%
+                              - generic:
+                                - generic: Total Downtime
+                                - generic: 0s
+                              - generic:
+                                - generic: Incidents
+                                - generic: "0"
+                            - generic:
+                              - generic:
+                                - img:
+                                  - generic:
+                                    - generic:
+                                      - generic: 06:21
+                                      - generic: 06:36
+                                      - generic: 06:51
+                                      - generic: 07:06
+                                      - generic: 07:21
+                                  - generic:
+                                    - generic:
+                                      - generic: Down
+                                      - generic: Up
+                        - generic:
+                          - generic: Latest incidents
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - table:
+                                    - rowgroup:
+                                      - row:
+                                        - columnheader:
+                                          - generic: Status
+                                        - columnheader:
+                                          - generic: Status Code
+                                        - columnheader:
+                                          - generic: Root cause
+                                        - columnheader:
+                                          - generic: Start time
+                                        - columnheader:
+                                          - generic: End time
+                                        - columnheader:
+                                          - generic: Duration
+                                    - rowgroup:
+                                      - row:
+                                        - cell:
+                                          - generic: Unresolved
+                                        - cell:
+                                          - generic: "404"
+                                        - cell:
+                                          - generic: Not Found
+                                        - cell:
+                                          - generic: 9/7/2026, 7:26:14 AM
+                                        - cell:
+                                          - generic: Ongoing
+                                        - cell:
+                                          - generic: 3m 24s
+    - list
+    - list
+  - generic [aria-hidden]: Down
+  - dialog [ref=e1130]:
+    - heading "Notification settings" [level=2] [ref=e1132]
+    - generic [ref=e1133]:
+      - generic [ref=e1134]:
+        - paragraph [ref=e1135]: Recipients
+        - generic [ref=e1136]:
+          - generic [ref=e1148]:
+            - textbox "Enter email address" [ref=e1150]
+            - button [ref=e1151] [cursor=pointer]
+          - button "Add email" [active] [ref=e1137] [cursor=pointer]
+      - generic [ref=e1139]:
+        - button "Cancel" [ref=e1140] [cursor=pointer]
+        - button "Save" [disabled] [ref=e1141]
+    - button "Close" [ref=e1142] [cursor=pointer]

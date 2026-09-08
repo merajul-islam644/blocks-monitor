@@ -1,0 +1,155 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e134]:
+      - generic [ref=e135]:
+        - generic [ref=e136]:
+          - link [ref=e137] [cursor=pointer]:
+            - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/console
+            - img "Logo" [ref=e138]
+          - button [ref=e139] [cursor=pointer]
+        - generic [ref=e140]:
+          - paragraph [ref=e141]: Workspace
+          - generic [ref=e142]:
+            - button "Project Test Project 1788695386964" [disabled] [ref=e143]:
+              - generic [ref=e147]:
+                - generic [ref=e148]: Project
+                - generic [ref=e149]: Test Project 1788695386964
+            - button "Environment dev" [disabled] [ref=e150]:
+              - generic [ref=e155]:
+                - generic [ref=e156]: Environment
+                - generic [ref=e157]: dev
+        - navigation [ref=e160]:
+          - link "Overview" [ref=e162] [cursor=pointer]:
+            - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/dashboard
+          - link "Monitor" [ref=e170] [cursor=pointer]:
+            - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/monitor
+      - generic [ref=e175]:
+        - banner [ref=e176]:
+          - generic [ref=e177]:
+            - link [ref=e178] [cursor=pointer]:
+              - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/console
+              - button "Back to console" [ref=e179]
+            - button "Change theme" [ref=e1090] [cursor=pointer]:
+              - generic [ref=e185]: Auto
+            - generic [ref=e190]:
+              - img [aria-hidden] [ref=e191] [cursor=pointer]
+              - generic [ref=e1008]: "3"
+            - button "en" [ref=e1091] [cursor=pointer]
+            - button "SELISE Blocks apps" [ref=e1092] [cursor=pointer]
+            - button "Open user menu" [ref=e1093] [cursor=pointer]:
+              - generic [ref=e213]: MZ
+        - main [ref=e473]:
+          - generic [ref=e765]:
+            - generic [ref=e766]:
+              - generic [ref=e767]:
+                - button "Go back" [ref=e768] [cursor=pointer]
+                - heading "Verify HTTP Check 1788743890176" [level=1] [ref=e771]
+              - generic [ref=e772]:
+                - button "Notification Settings" [ref=e773] [cursor=pointer]
+                - button "Configure" [ref=e777] [cursor=pointer]
+                - button "Actions" [ref=e781] [cursor=pointer]
+            - generic [ref=e786]:
+              - generic [ref=e787]:
+                - heading "General information" [level=3] [ref=e789]
+                - generic [ref=e790]:
+                  - generic [ref=e791]:
+                    - generic [ref=e792]: Tagged Service
+                    - text: None
+                  - generic [ref=e793]:
+                    - generic [ref=e794]: URL to monitor
+                    - link "https://example.com/verify-1788743903329" [ref=e795] [cursor=pointer]:
+                      - /url: https://example.com/verify-1788743903329
+                  - generic [ref=e796]:
+                    - generic [ref=e797]: Monitor type
+                    - generic [ref=e798]: HTTP Check
+                  - generic [ref=e799]:
+                    - generic [ref=e800]: Notification recipients
+                    - generic [ref=e801]:
+                      - generic [ref=e802]: Add recipient
+                      - button "Edit notification recipients" [ref=e803] [cursor=pointer]
+              - generic [ref=e807]:
+                - generic [ref=e809]:
+                  - generic [ref=e810]:
+                    - heading "Current Status" [level=3] [ref=e811]
+                    - generic [ref=e812]:
+                      - generic [ref=e813]: down
+                      - generic [ref=e814]: Currently down for -14s
+                  - generic [ref=e815]:
+                    - heading "Last 7 days" [level=3] [ref=e816]
+                    - generic [ref=e817]:
+                      - generic [ref=e818]: 99.97%
+                      - generic [ref=e819]: 1 incidents, 2m 48s down
+                  - generic [ref=e820]:
+                    - heading "Last 30 days" [level=3] [ref=e821]
+                    - generic [ref=e822]:
+                      - generic [ref=e823]: 99.99%
+                      - generic [ref=e824]: 1 incidents, 2m 48s down
+                  - generic [ref=e825]:
+                    - heading "Last 365 days" [level=3] [ref=e826]
+                    - generic [ref=e827]:
+                      - generic [ref=e828]: 100.00%
+                      - generic [ref=e829]: 1 incidents, 2m 48s down
+                - generic [ref=e830]:
+                  - generic [ref=e831]:
+                    - generic [ref=e832]:
+                      - heading "Status Overview" [level=3] [ref=e833]:
+                        - combobox [ref=e836] [cursor=pointer]:
+                          - generic: Last 1 Hour
+                      - paragraph [ref=e839]:
+                        - generic [ref=e840]:
+                          - generic [ref=e841]: Monitor interval
+                          - generic [ref=e842]: 1m
+                        - generic [ref=e843]:
+                          - generic [ref=e844]: Request timeout
+                          - generic [ref=e845]: 30s
+                    - generic [ref=e846]:
+                      - generic [ref=e847]:
+                        - generic [ref=e848]:
+                          - generic [ref=e849]: Uptime
+                          - generic [ref=e850]: 100.00%
+                        - generic [ref=e851]:
+                          - generic [ref=e852]: Total Downtime
+                          - generic [ref=e853]: 0s
+                        - generic [ref=e854]:
+                          - generic [ref=e855]: Incidents
+                          - generic [ref=e856]: "0"
+                      - img [ref=e859]:
+                        - generic [ref=e863]:
+                          - generic [ref=e864]: 06:21
+                          - generic [ref=e866]: 06:36
+                          - generic [ref=e868]: 06:51
+                          - generic [ref=e870]: 07:06
+                          - generic [ref=e872]: 07:21
+                        - generic [ref=e875]:
+                          - generic [ref=e876]: Down
+                          - generic [ref=e878]: Up
+                  - generic [ref=e883]:
+                    - generic [ref=e884]: Latest incidents
+                    - table [ref=e890]:
+                      - rowgroup [ref=e891]:
+                        - row [ref=e892]:
+                          - columnheader "Status" [ref=e893]
+                          - columnheader "Status Code" [ref=e896]
+                          - columnheader "Root cause" [ref=e899]
+                          - columnheader "Start time" [ref=e902]
+                          - columnheader "End time" [ref=e905]
+                          - columnheader "Duration" [ref=e908]
+                      - rowgroup [ref=e911]:
+                        - row [ref=e1095] [cursor=pointer]:
+                          - cell "Unresolved" [ref=e1096]
+                          - cell "404" [ref=e1099]
+                          - cell "Not Found" [ref=e1102]
+                          - cell "9/7/2026, 7:26:14 AM" [ref=e1105]
+                          - cell "Ongoing" [ref=e1108]
+                          - cell "2m 48s" [ref=e1111]
+    - region "Notifications (F8)":
+      - list
+    - region "Notifications (F8)":
+      - list [ref=e754]:
+        - listitem [ref=e1115]:
+          - generic [ref=e1116]:
+            - generic [ref=e1117]: Success
+            - generic [ref=e1118]: Monitor successfully updated.
+          - button [ref=e1119] [cursor=pointer]
+  - generic [aria-hidden] [ref=e914]: Down
+  - status [ref=e1124]: Notification SuccessMonitor successfully updated.

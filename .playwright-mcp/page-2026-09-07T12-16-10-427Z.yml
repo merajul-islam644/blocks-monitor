@@ -1,0 +1,94 @@
+- generic [ref=f7e2]:
+  - generic [ref=f7e135]:
+    - generic [ref=f7e136]:
+      - generic [ref=f7e137]:
+        - link [ref=f7e138] [cursor=pointer]:
+          - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/console
+          - img "Logo" [ref=f7e139]
+        - button [ref=f7e140] [cursor=pointer]
+      - generic [ref=f7e141]:
+        - paragraph [ref=f7e142]: Workspace
+        - generic [ref=f7e143]:
+          - button "Project Test Project 1788695386964" [disabled] [ref=f7e144]:
+            - generic [ref=f7e148]:
+              - generic [ref=f7e149]: Project
+              - generic [ref=f7e150]: Test Project 1788695386964
+          - button "Environment dev" [disabled] [ref=f7e151]:
+            - generic [ref=f7e156]:
+              - generic [ref=f7e157]: Environment
+              - generic [ref=f7e158]: dev
+      - navigation [ref=f7e161]:
+        - link "Overview" [ref=f7e163] [cursor=pointer]:
+          - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/dashboard
+        - link "Monitor" [active] [ref=f7e171] [cursor=pointer]:
+          - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/monitor
+    - generic [ref=f7e176]:
+      - banner [ref=f7e177]:
+        - generic [ref=f7e178]:
+          - link [ref=f7e179] [cursor=pointer]:
+            - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/console
+            - button "Back to console" [ref=f7e180]
+          - button "Change theme" [ref=f7e183] [cursor=pointer]:
+            - generic [ref=f7e186]: Auto
+          - generic [ref=f7e191]:
+            - img [aria-hidden] [ref=f7e192] [cursor=pointer]
+            - generic [ref=f7e195]: "2"
+          - button "en" [ref=f7e197] [cursor=pointer]
+          - button "SELISE Blocks apps" [ref=f7e202] [cursor=pointer]
+          - button "Open user menu" [ref=f7e214] [cursor=pointer]:
+            - generic [ref=f7e215]: MZ
+      - main [ref=f7e475]:
+        - main [ref=f7e476]:
+          - generic [ref=f7e477]:
+            - heading "Monitor" [level=1] [ref=f7e478]
+            - link [ref=f7e479] [cursor=pointer]:
+              - /url: https://dev-monitor.blocksdevelopers.com/swagger/index.html
+              - button "API Docs" [ref=f7e480]
+          - generic [ref=f7e483]:
+            - tablist [ref=f7e487]:
+              - tab "My monitors" [selected] [ref=f7e488] [cursor=pointer]
+              - tab "Blocks services" [ref=f7e489] [cursor=pointer]
+            - button "Add Monitor" [ref=f7e490] [cursor=pointer]
+          - generic [ref=f7e492]:
+            - table [ref=f7e498]:
+              - rowgroup [ref=f7e499]:
+                - row [ref=f7e500]:
+                  - columnheader "Name" [ref=f7e501]
+                  - columnheader "Monitor Type" [ref=f7e506]
+                  - columnheader "URL" [ref=f7e509]
+                  - columnheader "Tagged Service" [ref=f7e512]
+                  - columnheader "Uptime" [ref=f7e515]
+                  - columnheader "Status" [ref=f7e518]
+                  - columnheader [ref=f7e521]
+              - rowgroup [ref=f7e522]:
+                - row [ref=f7e523] [cursor=pointer]:
+                  - cell "Verify HTTP Check 1788743890176" [ref=f7e524]
+                  - cell "HTTP Check" [ref=f7e527]
+                  - cell "https://example.com/verify-1788743903329" [ref=f7e530]
+                  - cell "-" [ref=f7e533]
+                  - cell "Sep 7, 2026" [ref=f7e536]
+                  - cell "54%" [ref=f7e541]
+                  - cell [ref=f7e594]
+                - row [ref=f7e600] [cursor=pointer]:
+                  - cell "Verify Happy Path 12345" [ref=f7e601]
+                  - cell "HTTP Check" [ref=f7e604]
+                  - cell "https://example.com/happy-12345" [ref=f7e607]
+                  - cell "-" [ref=f7e610]
+                  - cell "Sep 7, 2026" [ref=f7e613]
+                  - cell "58%" [ref=f7e618]
+                  - cell [ref=f7e671]
+            - generic [ref=f7e679]:
+              - generic [ref=f7e680]:
+                - paragraph [ref=f7e681]: Rows per page
+                - combobox [ref=f7e682] [cursor=pointer]:
+                  - generic: "10"
+              - generic [ref=f7e685]: Page 1 of 1
+              - generic [ref=f7e686]:
+                - button "Go to first page" [disabled]
+                - button "Go to previous page" [disabled]
+                - button "Go to next page" [disabled]
+                - button "Go to last page" [disabled]
+  - region "Notifications (F8)":
+    - list
+  - region "Notifications (F8)":
+    - list

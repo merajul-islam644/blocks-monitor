@@ -1,0 +1,135 @@
+- generic:
+  - generic [aria-hidden]:
+    - generic:
+      - generic:
+        - generic:
+          - generic:
+            - link:
+              - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/console
+            - button
+          - generic:
+            - paragraph: Workspace
+            - generic:
+              - button [disabled]:
+                - generic:
+                  - generic:
+                    - generic: Project
+                    - generic: Test Project 1788695386964
+              - button [disabled]:
+                - generic:
+                  - generic:
+                    - generic: Environment
+                    - generic: dev
+          - generic:
+            - navigation:
+              - generic:
+                - link:
+                  - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/dashboard
+                  - generic: Overview
+              - generic:
+                - link:
+                  - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/monitor
+                  - generic: Monitor
+        - generic:
+          - banner:
+            - generic:
+              - link:
+                - /url: /app/663ef9df-4189-4409-aa99-968be1599b08/console
+                - button:
+                  - generic: Back to console
+              - button [ref=f8e249] [cursor=pointer]:
+                - generic [ref=f8e55]: Auto
+              - generic [ref=f8e60]:
+                - img [aria-hidden] [ref=f8e61] [cursor=pointer]
+                - generic [ref=f8e64]: "2"
+              - button [ref=f8e250] [cursor=pointer]:
+                - generic [ref=f8e67]: en
+              - button [ref=f8e251] [cursor=pointer]
+              - button [ref=f8e252] [cursor=pointer]:
+                - generic [ref=f8e84]: MZ
+          - generic:
+            - generic:
+              - main:
+                - main:
+                  - generic:
+                    - heading [level=1]: Monitor
+                    - link:
+                      - /url: https://dev-monitor.blocksdevelopers.com/swagger/index.html
+                      - button: API Docs
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - tablist:
+                            - tab [selected]: My monitors
+                            - tab: Blocks services
+                    - button: Add Monitor
+                  - generic:
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - generic:
+                              - table:
+                                - rowgroup:
+                                  - row:
+                                    - columnheader:
+                                      - generic: Name
+                                    - columnheader:
+                                      - generic: Monitor Type
+                                    - columnheader:
+                                      - generic: URL
+                                    - columnheader:
+                                      - generic: Tagged Service
+                                    - columnheader:
+                                      - generic: Uptime
+                                    - columnheader:
+                                      - generic: Status
+                                    - columnheader
+                                - rowgroup:
+                                  - row:
+                                    - cell:
+                                      - generic: Verify HTTP Check 1788743890176
+                                    - cell:
+                                      - generic: HTTP Check
+                                    - cell:
+                                      - generic: https://example.com/verify-1788743903329
+                                    - cell:
+                                      - generic: "-"
+                                    - cell:
+                                      - generic: Sep 7, 2026
+                                    - cell:
+                                      - generic: Paused
+                                    - cell
+                                  - row:
+                                    - cell:
+                                      - generic: Verify Happy Path 12345
+                                    - cell:
+                                      - generic: HTTP Check
+                                    - cell:
+                                      - generic: https://example.com/happy-12345
+                                    - cell:
+                                      - generic: "-"
+                                    - cell:
+                                      - generic: Sep 7, 2026
+                                    - cell:
+                                      - generic: 58%
+                                    - cell
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - paragraph: Rows per page
+                            - combobox:
+                              - generic: "10"
+                          - generic: Page 1 of 1
+                          - generic:
+                            - button [disabled]
+                            - button [disabled]
+                            - button [disabled]
+                            - button [disabled]
+    - list
+    - list
+  - menu [active] [ref=f8e253]:
+    - menuitem "Resume" [ref=f8e254] [cursor=pointer]
+    - menuitem "Delete" [ref=f8e256] [cursor=pointer]
